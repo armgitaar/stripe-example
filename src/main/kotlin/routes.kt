@@ -1,6 +1,6 @@
-package __PACKAGE__
+package com.stripe.example
 
-import __PACKAGE__.controllers.WelcomeController
+import com.stripe.example.controllers.WelcomeController
 import dev.alpas.routing.RouteGroup
 import dev.alpas.routing.Router
 
@@ -15,7 +15,8 @@ fun Router.addRoutes() = apply {
 
 private fun RouteGroup.webRoutesGroup() {
     get("/", WelcomeController::index).name("welcome")
-    // register more web routes here
+    post("/create-payment-intent", WelcomeController::payment)
+
 }
 
 private fun Router.apiRoutes() {

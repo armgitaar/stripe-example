@@ -1,4 +1,4 @@
-package __PACKAGE__.entities
+package com.stripe.example.entities
 
 import dev.alpas.auth.BaseUser
 import dev.alpas.auth.BaseUsersTable

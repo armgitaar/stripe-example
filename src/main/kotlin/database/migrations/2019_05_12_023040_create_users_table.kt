@@ -1,6 +1,6 @@
-package __PACKAGE__.database.migrations
+package com.stripe.example.database.migrations
 
-import __PACKAGE__.entities.Users
+import com.stripe.example.entities.Users
 import dev.alpas.auth.PasswordResetTokens
 import dev.alpas.ozone.migration.Migration
 

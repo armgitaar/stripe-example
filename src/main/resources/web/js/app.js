@@ -14645,8 +14645,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/ashokgelal/Projects/alpas-starter/src/main/resources/js/app.js */"./src/main/resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/ashokgelal/Projects/alpas-starter/src/main/resources/css/app.less */"./src/main/resources/css/app.less");
+__webpack_require__(/*! /Users/adammiedema/stripe-example/src/main/resources/js/app.js */"./src/main/resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adammiedema/stripe-example/src/main/resources/css/app.less */"./src/main/resources/css/app.less");
 
 
 /***/ })
