@@ -38,18 +38,20 @@ class StripeController : Controller(){
 
         call.reply(objectMapper.writeValueAsString(paymentResponse))
     }
+
+    private val objectMapper: ObjectMapper = ObjectMapper()
+
+    fun calculateOrderAmount(items: Array<Any?>?): Int {
+        return 1400
+    }
+
+    internal class CreatePayment {
+        @SerializedName("items")
+        lateinit var items: Array<Any?>
+    }
+
+    internal class CreatePaymentResponse(private val clientSecret: String)
 }
 
-private val objectMapper: ObjectMapper = ObjectMapper()
 
-fun calculateOrderAmount(items: Array<Any?>?): Int {
-    return 1400
-}
-
-internal class CreatePayment {
-    @SerializedName("items")
-    lateinit var items: Array<Any?>
-}
-
-internal class CreatePaymentResponse(private val clientSecret: String)
 
