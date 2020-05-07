@@ -4,7 +4,8 @@ var stripe = Stripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
 // The items the customer wants to buy
 var purchase = {
-    items: [{ id: "xl-tshirt" }]
+    items: [{ id: "xl-tshirt" }, { id: "xll-tshirt" }]
+
 };
 
 // Disable the button until we have Stripe set up on the page
