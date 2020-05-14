@@ -76,7 +76,16 @@ var payWithCard = function(stripe, card, clientSecret) {
                 showError(result.error.message);
             } else {
                 // The payment succeeded!
+                var email = document.getElementById("email").value;
                 orderComplete(result.paymentIntent.id);
+                fetch("/payment-success", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        'X-CSRF-TOKEN': document.head.querySelector("[name~=csrf-token][content]").content
+                    },
+                    body: email
+                });
             }
         });
 };

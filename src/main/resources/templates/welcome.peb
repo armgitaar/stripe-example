@@ -18,7 +18,8 @@
 
     <form id="payment-form">
     {{ csrf }}
-      <div id="card-element"><!--Stripe.js injects the Card Element--></div>
+      <input id="email" placeholder="your@email.address">
+        <div id="card-element"><!--Stripe.js injects the Card Element--></div>
       <button id="submit">
         <div class="spinner hidden" id="spinner"></div>
         <span id="button-text">Pay</span>
