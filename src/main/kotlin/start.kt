@@ -49,5 +49,5 @@ fun send(call: HttpCall) {
         subject = "Order Confirmed"
         message = "Here is your order receipt!"
     }
-    call.config<MailConfig>().driver().send(mail)
+    call.config<MailConfig>().driver("sparkpost").send(mail)
 }

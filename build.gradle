@@ -31,6 +31,8 @@ dependencies {
     implementation "com.stripe:stripe-java:19.4.0"
     implementation 'com.google.code.gson:gson:2.8.5'
 
+    implementation 'com.sparkpost:sparkpost-lib:0.21'
+
     implementation "dev.alpas:alpas:$alpas_version"
     testImplementation "dev.alpas:pulsar:$alpas_version"
     // Prepend the latest SHA to try out the latest Alpas version

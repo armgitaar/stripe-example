@@ -1,5 +1,7 @@
 package com.stripe.example.configs
 
+
+import com.stripe.example.drivers.SparkPostDriver
 import dev.alpas.Environment
 import dev.alpas.mailing.drivers.LocalMailDriver
 import dev.alpas.mailing.drivers.SmtpDriver
@@ -11,5 +13,8 @@ class MailConfig(env: Environment) : BaseConfig(env) {
     init {
         addDriver("smtp", lazy { SmtpDriver(env) })
         addDriver("local", lazy { LocalMailDriver(env) })
+        addDriver("sparkpost", lazy {
+            SparkPostDriver(env)
+        })
     }
 }
